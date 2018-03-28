@@ -6,6 +6,7 @@ const CLIENT_DEST = path.join(__dirname, './client/dist');
 module.exports = {
     entry: './client/src/index.js',
     output: { path: CLIENT_DEST, filename: 'bundle.js' },
+    mode: 'developement',
     module: {
         rules: [
             {
@@ -23,9 +24,5 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.jsx']
     }
-    // new webpack.DefinePlugin({
-    //     "process.env": { 
-    //        NODE_ENV: JSON.stringify("development") 
-    //      }
-    //   })
+  
 }

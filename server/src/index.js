@@ -2,7 +2,7 @@ var path = require('path');
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
-var clientPath = path.join(__dirname, '../client');
+var clientPath = path.join(__dirname, '../../client');
 var api = require('./api');
 
 // var prerender = require('prerender-node');
